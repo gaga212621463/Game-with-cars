@@ -1,0 +1,349 @@
+.body1{
+	max-height: 1080px;
+	max-width: 1920px;
+    overflow: hidden;
+    background-image: url("img/road.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+	font-family: 'Steppe-Book';
+	src: url("fonts/Steppe-Book.ttf");
+}
+
+@font-face {
+	font-family: 'Steppe-ExtraBold';
+	src: url("fonts/Steppe-ExtraBold.ttf");
+}
+
+#poloski{
+    position: absolute;  
+    top: 56%;
+	left: 20%;
+    height: 400%;
+    width: 60%;
+
+    opacity: 70%;
+
+    animation: moveRoad 0.5s linear infinite;
+}
+
+#car{
+    position: absolute;
+	top: 56%;
+	left: 2%;
+
+    height: 40%;
+    width: 15%;
+}
+
+#enCar1{
+    position: absolute;
+	top: -40%;
+	left: 2%;
+
+    height: 40%;
+    width: 15%;
+}
+
+#enCar2{
+    position: absolute;
+	top: -40%;
+	left: 29%;
+
+    height: 40%;
+    width: 15%;
+}
+
+#enCar3{
+    position: absolute;
+	top: -40%;
+	left: 57%;
+
+    height: 40%;
+    width: 15%;
+}
+
+#enCar4{
+    position: absolute;
+	top: -40%;
+	left: 82%;
+
+    height: 40%;
+    width: 15%;
+}
+
+
+
+#voskl1{
+	position: absolute;
+	top: 20%;
+	left: 5%;
+
+    height: 15%;
+    width: 9%;
+	opacity: 0;
+}
+#voskl2{
+	position: absolute;
+	top: 20%;
+	left: 32%;
+
+    height: 15%;
+    width: 9%;
+	opacity: 0;
+}
+#voskl3{
+	position: absolute;
+	top: 20%;
+	left: 60%;
+
+    height: 15%;
+    width: 9%;
+	opacity: 0;
+}
+#voskl4{
+	position: absolute;
+	top: 20%;
+	left: 85%;
+
+    height: 15%;
+    width: 9%;
+	opacity: 0;
+}
+
+.vosklAnimClass{
+	animation: vosklAnim 0.3s infinite;
+}
+
+
+@keyframes vosklAnim{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.carHorizMove2{
+	animation: horizRideCar2 0.1s linear;
+}
+
+.carHorizMove3{
+	animation: horizRideCar3 0.1s linear;
+}
+
+.carHorizMove4{
+	animation: horizRideCar4 0.1s linear;
+}
+
+
+.carHorizMove4back{
+	animation: horizRideCar4back 0.1s linear;
+}
+.carHorizMove5back{
+	animation: horizRideCar5back 0.1s linear;
+}
+.carHorizMove6back{
+	animation: horizRideCar6back 0.1s linear;
+}
+
+
+
+.enemyCarMove{
+	animation: enemyCarRide 1.4s linear;
+}
+
+
+@keyframes moveRoad{
+    0%{
+		transform: translateY(-30%);
+	}
+    100%{
+        transform: translateY(-15%);
+    }
+}
+
+
+@keyframes horizRideCar2{
+    0%{
+		left: 2%;
+	}
+    100%{
+        left: 29%;
+    }
+}
+
+@keyframes horizRideCar3{
+    0%{
+		left: 29%;
+	}
+    100%{
+        left: 57%;
+    }
+}
+
+@keyframes horizRideCar4{
+    0%{
+		left: 57%;
+	}
+    100%{
+        left: 82%;
+    }
+}
+
+
+@keyframes horizRideCar4back{
+    0%{
+		left: 82%;
+	}
+    100%{
+        left: 57%;
+    }
+}
+
+
+@keyframes horizRideCar5back{
+    0%{
+		left: 57%;
+	}
+    100%{
+        left: 29%;
+    }
+}
+
+
+@keyframes horizRideCar6back{
+    0%{
+		left: 29%;
+	}
+    100%{
+        left: 2%;
+    }
+}
+
+
+@keyframes enemyCarRide{
+    0%{
+		transform: translateY(-40%);
+	}
+    100%{
+        transform: translateY(500%);
+    }
+}
+
+
+
+/*=============================================================================*/
+
+.menu{
+	position: fixed;
+	left: 30%;
+	top: 13%;
+}
+
+.title{
+	text-align: center;
+	
+	padding-top: 5%;
+	
+	font-family: 'Steppe-ExtraBold', "sans-serif";
+	font-size: 60px;
+}
+
+.button{
+	height: 20vh;
+	width: 40vw;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	border: 2px solid black;
+	border-radius: 40px;
+	
+	background-color: white;
+	font-family: "Arial";
+	font-size: 20px;
+}
+
+.button:hover{
+	background-color: #fcfafa;
+}
+
+
+.score-menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	position: fixed;
+	top: 10px;
+	left: 20px;
+	width: 140px;
+	height: 50px;
+	
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.score{
+	font-family: 'Steppe-ExtraBold', "sans-serif";
+	font-size: 30px; 
+}
+
+.tops-block{
+	position: fixed;
+	top: 2%;
+	left: 88%;
+	
+	border: 2px solid black;
+	border-radius: 10px; 
+	
+	font-family: 'Steppe-Book', "sans-serif";
+}
+
+.tops-detales{
+	margin: 13px;
+}
+
+.score-title{
+	text-align: center;
+
+	padding-top: 1%;
+	padding-bottom: 7%;
+
+	font-family: 'Steppe-Book', "sans-serif";
+	font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
